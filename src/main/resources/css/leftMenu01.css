@@ -1,0 +1,20 @@
+.leftMenu {
+    -fx-background-color: #f4f4f4;
+}
+
+.leftMenuItem {
+    -fx-padding: 20px;
+    -fx-cursor: hand;
+}
+
+.leftMenuItem:hover {
+    -fx-background-color: #ffffff;
+}
+
+.leftMenuItem .label {
+    -fx-font-size: 28px;
+    /*-fx-padding: 0 0 0 20;*/
+    -fx-font-family: 'FangSong';
+    -fx-text-fill: #333333;
+    -fx-text-alignment: center;
+}

@@ -1,0 +1,18 @@
+.bg{
+    -fx-font-size: 14px;
+}
+.btnOK{
+    -fx-background-color: #00988b;
+    -fx-text-fill: #ffffff;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 35px;
+    -fx-cursor: hand;
+}
+.text-field{
+    -fx-pref-height: 30px;
+    -fx-pref-width: 240px;
+}
+.errorText{
+    -fx-text-fill: red;
+    -fx-padding: 5px 0px;
+}

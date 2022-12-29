@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="575.0" prefWidth="600.0" styleClass="vbox" stylesheets="@../../../../css/personMain.css"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo.fxmlcontroller.PersonMainController">
+    <children>
+        <HBox styleClass="hboxTop">
+            <children>
+                <TextField fx:id="txtKey" promptText="可按工号，姓名模糊查询" styleClass="txtKey">
+                    <HBox.margin>
+                        <Insets right="5.0"/>
+                    </HBox.margin>
+                </TextField>
+                <HBox/>
+                <Button mnemonicParsing="false" onAction="#findClick" styleClass="btnFind" text="查询"/>
+                <Button mnemonicParsing="false" onAction="#AddClick" styleClass="btnAdd" text="添加">
+                    <HBox.margin>
+                        <Insets left="5.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#btnExportExcel" styleClass="btnBlue" text="导出Excel">
+                    <HBox.margin>
+                        <Insets left="5.0"/><!--按钮的左外边距-->
+                    </HBox.margin>
+                </Button><!--导出excel按钮-->
+            </children>
+        </HBox>
+        <HBox prefHeight="520.0" prefWidth="1400.0" styleClass="hboxTable">
+            <TableView fx:id="tbPerson" prefHeight="508.0" prefWidth="1500.0" tableMenuButtonVisible="true">
+                <columns>
+                    <TableColumn fx:id="tbcTno" minWidth="20.0" prefWidth="170.0" text="工号"/>
+                    <TableColumn fx:id="tbcTname" prefWidth="170.0" text="姓名"/>
+                    <TableColumn fx:id="tbcTsex" prefWidth="170.0" text="性别"/>
+                    <TableColumn fx:id="tbcTuni" prefWidth="170.0" text="学校"/>
+                    <TableColumn fx:id="tbcGname" prefWidth="605.0" text="成果名"/>
+                    <TableColumn fx:id="tbcGType" prefWidth="170.0" text="成果类型"/>
+                </columns>
+
+                <contextMenu>
+                    <ContextMenu styleClass="menuitem" prefWidth="300.0">
+                        <items>
+                            <MenuItem onAction="#btnDel" mnemonicParsing="false" text="删除">
+                                <graphic>
+                                    <ImageView>
+                                        <image>
+                                            <Image url="@../../../../pictures/del.png"/>
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </MenuItem>
+                            <MenuItem onAction="#btnEdit" mnemonicParsing="false" text="编辑">
+                                <graphic>
+                                    <ImageView>
+                                        <image>
+                                            <Image url="@../../../../pictures/edit.png"/>
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </MenuItem>
+                        </items>
+                    </ContextMenu>
+                </contextMenu>
+
+               <!-- <columnResizePolicy>&lt;!&ndash;数据表格列的内容自适应宽度&ndash;&gt;
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>-->
+            </TableView>
+        </HBox>
+        <Pagination fx:id="pageTable" prefWidth="1000" BorderPane.alignment="CENTER"/><!--分页组件-->
+    </children>
+</VBox>

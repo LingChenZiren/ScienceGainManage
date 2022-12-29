@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="188.0" prefWidth="200.0" styleClass="leftMenu" stylesheets="@../../../../css/leftMenu01.css"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo.fxmlcontroller.LeftMenu01Controller">
+   <children>
+      <VBox prefHeight="50.0" />
+      <HBox fx:id="itemclick" onMouseClicked="#itemClicked" styleClass="leftMenuItem" stylesheets="@leftMenu01.fxml">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="leftMenuItem">
+               <image>
+                  <Image url="@../../../../pictures/HomePage.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="首页" textFill="#2c262f" textOverrun="CENTER_ELLIPSIS" />
+         </children>
+      </HBox>
+      <HBox onMouseClicked="#itemClickedTwo" styleClass="leftMenuItem" stylesheets="@leftMenu01.fxml">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../pictures/personManage.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <Label text="资源管理">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

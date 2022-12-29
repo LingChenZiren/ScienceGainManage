@@ -1,0 +1,45 @@
+.vbox{/*顶层Vbox布局组件*/
+    -fx-padding: 10px;/*内边距*/
+    -fx-font-size: 18px;/*字体大小*/
+}
+.hboxTop{/*顶部HBox布局组件*/
+    -fx-padding: 15px;/*内边距*/
+    -fx-font-size: 18px;/*字体大小*/
+    -fx-border-color: #cccccc;/*边框颜色*/
+    -fx-border-width: 1px;/*边框宽度*/
+    -fx-border-style: solid;/*边框样式*/
+}
+.btnFind{/*搜索按钮*/
+    -fx-background-color: #dfdfdf;/*背景颜色*/
+    -fx-text-fill: #000000;/*字体颜色*/
+    -fx-pref-width: 80px;/*宽度*/
+    -fx-opacity: 0.7;/*透明度*/
+    -fx-border-radius: 0;/*设置边框圆角*/
+    -fx-background-radius: 0;/*设置背景圆角*/
+    -fx-cursor: hand;/*鼠标形状*/
+}
+.btnAdd{/*添加按钮*/
+    -fx-background-color: #cce7ff;
+    -fx-text-fill: #000000;
+    -fx-pref-width: 80px;
+    -fx-border-radius: 0;/*设置边框圆角*/
+    -fx-background-radius: 0;/*设置背景圆角*/
+    -fx-cursor: hand;
+}
+.txtKey{/*搜索文本框*/
+    -fx-border-radius: 0;/*边框圆角*/
+    -fx-background-radius: 0;/*背景圆角*/
+}
+.menuitem{/*右键菜单项，使用JavaFX提供的菜单项类型选择器*/
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+}
+
+.hboxTable{/*装载数据表格的HBox布局组件*/
+    -fx-padding: 15px;/*内边距*/
+    -fx-alignment: center;/*居中对齐*/
+}
+.table-column{/*数据表格列*/
+    -fx-alignment: center;
+}
